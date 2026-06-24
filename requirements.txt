@@ -1,0 +1,59 @@
+# requirements.txt
+# Dependances Python necessaires a l'execution du notebook
+# Etudes_de_cas_Regression.ipynb
+#
+# Installation :
+#   pip install -r requirements.txt
+
+# ----------------------------------------------------------------------
+# Manipulation de donnees
+# ----------------------------------------------------------------------
+# pandas : chargement, exploration et manipulation du jeu de donnees
+#          (DataFrame, gestion des valeurs manquantes, agregations, etc.)
+pandas>=1.5.0
+
+# numpy : calcul numerique sous-jacent (tableaux, operations mathematiques,
+#         utilise notamment pour le calcul du RMSE)
+numpy>=1.23.0
+
+# ----------------------------------------------------------------------
+# Visualisation
+# ----------------------------------------------------------------------
+# matplotlib : librairie de base pour la creation des graphiques
+#              (histogrammes, nuages de points, courbes d'apprentissage)
+matplotlib>=3.6.0
+
+# seaborn : librairie de visualisation statistique construite sur
+#           matplotlib, utilisee pour les analyses bivariees et
+#           multivariees (heatmaps de correlation, boxplots, etc.)
+seaborn>=0.12.0
+
+# ----------------------------------------------------------------------
+# Statistiques
+# ----------------------------------------------------------------------
+# scipy : fonctions statistiques utilisees lors de la phase d'exploration
+#         (tests statistiques, calculs de distribution)
+scipy>=1.9.0
+
+# ----------------------------------------------------------------------
+# Machine learning : pretraitement, modelisation et evaluation
+# ----------------------------------------------------------------------
+# scikit-learn : coeur de la partie machine learning du notebook
+#   - train_test_split, GridSearchCV, learning_curve : separation des
+#     donnees et recherche d'hyperparametres par validation croisee
+#   - ColumnTransformer, Pipeline : construction de la pipeline de
+#     pretraitement (numerique / categoriel) et d'entrainement
+#   - StandardScaler, OneHotEncoder, SimpleImputer : normalisation,
+#     encodage des variables categorielles et imputation des valeurs
+#     manquantes
+#   - LinearRegression, Ridge, RandomForestRegressor : modeles de
+#     regression compares dans l'etude (baseline, Ridge, Random Forest)
+#   - mean_absolute_error, mean_squared_error, r2_score : metriques
+#     d'evaluation des modeles (MAE, RMSE, R2)
+scikit-learn>=1.2.0
+
+# ----------------------------------------------------------------------
+# Environnement notebook
+# ----------------------------------------------------------------------
+# jupyter : permet d'ouvrir et d'executer le fichier .ipynb localement
+jupyter>=1.0.0
